@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>[NYO] Rock - Paper - Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/16/6831/6831872.png">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <div id="banner-green">NOT YOUR ORDINARY ROCK PAPER SCISSORS</div>
+        <div id="play">
+            <div class="col3 choose" id="rock">
+                <img src="https://cdn-icons-png.flaticon.com/512/4405/4405457.png" alt="Rock"><br>
+                Pick me!
+            </div>
+            <div class="col3 choose" id="paper">
+                <img src="https://cdn-icons-png.flaticon.com/512/1861/1861211.png" alt="Paper"><br>
+                Pick me!
+            </div>
+            <div class="col3 choose" id="scissors">
+                <img src="https://cdn-icons-png.flaticon.com/512/4697/4697606.png" alt="Scissors"><br>
+                Pick me!
+            </div>
+        </div>
+        <div id="banner-pink">Scoreboard</div>
+        <div class="score-info">
+            <div class="col3">
+                <span class="colhead">your score</span><br>
+                <div id="my-score" class="score">0</div>
+                <img src="https://cdn-icons-png.flaticon.com/512/2423/2423802.png" alt="A Cute Boy">
+            </div>
+            <div class="col3" id="record">
+                <span class="colhead2">record</span><br>
+                <div class="lets-play">If you lose you've to accept a challenge!</div>
+                <div class="clear"><br></div>
+            </div>
+            <div class="col3">
+                <span class="colhead">computer score</span><br>
+                <div id="comp-score" class="score">0</div>
+                <img src="https://cdn-icons-png.flaticon.com/512/1129/1129196.png" alt="A Robot">
+            </div>
+        </div>
+        <div id="results">
+            <div id="you-won">
+                <div id="banner-blue">Congrats!</div>
+                <img src="images/You Won.png" alt="You won!"><br>
+                <button type="play-again" onClick="location.reload();">Play again?</button>
+            </div>
+            <div id="you-lost">
+                <div id="banner-blue">Here's Your Challenge!</div>
+                <img id="challenge" src="" alt="You lost!"><br>
+                <button type="play-again" onClick="location.reload();">Refresh to play again.</button>
+            </div>
+        </div>
+        <footer>
+            <span>Made with ❤️ by team carpe_diem</span>
+        </footer>
+    </div>
+    <!--container-->
+    <script src="script.js"></script>
+</body>
+
+</html>
